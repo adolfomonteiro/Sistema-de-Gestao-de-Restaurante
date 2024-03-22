@@ -35,8 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,12 +44,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(368, 111);
+            this.label1.Location = new System.Drawing.Point(233, 128);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(652, 81);
+            this.label1.Size = new System.Drawing.Size(601, 76);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistema de Gestão";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -59,7 +59,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 30.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(649, 192);
+            this.label2.Location = new System.Drawing.Point(425, 204);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(373, 97);
@@ -72,7 +72,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(623, 503);
+            this.label3.Location = new System.Drawing.Point(596, 489);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(185, 36);
@@ -82,12 +82,12 @@
             // guna2ProgressBar1
             // 
             this.guna2ProgressBar1.BorderRadius = 10;
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(276, 379);
+            this.guna2ProgressBar1.Location = new System.Drawing.Point(153, 409);
             this.guna2ProgressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ProgressBar1.Name = "guna2ProgressBar1";
             this.guna2ProgressBar1.ProgressColor = System.Drawing.Color.Red;
             this.guna2ProgressBar1.ProgressColor2 = System.Drawing.Color.Red;
-            this.guna2ProgressBar1.Size = new System.Drawing.Size(932, 47);
+            this.guna2ProgressBar1.Size = new System.Drawing.Size(1106, 32);
             this.guna2ProgressBar1.TabIndex = 5;
             this.guna2ProgressBar1.Text = "guna2ProgressBar1";
             this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -97,28 +97,28 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1025, 99);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 170);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(842, 128);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(231, 194);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1393, 631);
+            this.ClientSize = new System.Drawing.Size(1363, 573);
             this.Controls.Add(this.guna2ProgressBar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
@@ -128,7 +128,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "  ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

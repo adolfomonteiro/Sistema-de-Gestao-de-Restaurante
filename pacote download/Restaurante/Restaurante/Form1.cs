@@ -28,12 +28,12 @@ namespace Restaurante
             {
                 timer1.Start();
                 for (int i = 0; i <= 10000000; i++) ;
-                guna2ProgressBar1.Value += 5;
+                guna2ProgressBar1.Value += 3;
             }
             else
             {
                 timer1.Stop();
-                Home formulario = new Home();
+                login_funcionario formulario = new login_funcionario();
                 this.Hide();
                 formulario.ShowDialog();
             }
