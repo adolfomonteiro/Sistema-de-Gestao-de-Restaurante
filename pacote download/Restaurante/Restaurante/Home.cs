@@ -145,5 +145,13 @@ namespace Restaurante
             this.Hide();
             v.ShowDialog();
         }
+
+        private void btn_Estoque_Click(object sender, EventArgs e)
+        {
+            Image imagem = btn_Estoque.Image;
+            Vender v = new Vender(imagem);
+            this.Hide();
+            v.ShowDialog();
+        }
     }
 }

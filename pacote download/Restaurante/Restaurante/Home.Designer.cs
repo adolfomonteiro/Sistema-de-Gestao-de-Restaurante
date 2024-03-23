@@ -185,6 +185,7 @@
             this.btn_Estoque.TabIndex = 3;
             this.btn_Estoque.Text = "Estoque";
             this.btn_Estoque.UseVisualStyleBackColor = false;
+            this.btn_Estoque.Click += new System.EventHandler(this.btn_Estoque_Click);
             // 
             // btn_Gerente
             // 

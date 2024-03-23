@@ -14,13 +14,16 @@ namespace Restaurante
     public partial class Venda : Form
     {
         private Image imagemRecebida;
+        private int  precoProduto;
+        private int totaldeSaida;
         public Venda(Image imagem, string nome, string categoria, string preco)
         {
             InitializeComponent();
             imagemRecebida = imagem;
             txtNome.Text = nome;
             txtCategoria.Text = categoria;
-            txtPreco.Text = preco;
+            txtPreco.Text = preco.ToString();
+  
         }
         
         private void btn_Entrar_Click(object sender, EventArgs e)
@@ -38,7 +41,16 @@ namespace Restaurante
         
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-           dbClasse c = new dbClasse();
+            Vender formEstoque = Application.OpenForms["Vender"] as Vender;
+
+            if(formEstoque != null){
+                formEstoque.AdicionarPrecoVendido(precoProduto, totaldeSaida);
+            }
+            else
+            {
+                MessageBox.Show("Formulário de Estoque não está aberto!");
+            }
+            this.Close();
            
         }
     }
