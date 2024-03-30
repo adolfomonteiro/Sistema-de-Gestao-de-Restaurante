@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login </h1>
+        <label for="txtNome" class="h3">Nome Completo</label>
+        <input type="text" id="txtNome">
+        <label for="txtSenha"  class="h3">Palavra-Passe</label>
+        <input type="password" id="txtSenha" keybord-focusable="">
+        <a href="#">Criar Conta</a>
+        <button>Entrar</button>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 28vh;
+}
+:root{
+    --cor1:blueviolet;
+    --white:white;
+    --cor2:gray;
+    --cor3:royalblue;
+}
+.container{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 350px;
+    line-height: 35px;
+    margin-top: -80px;
+    padding: 40px 0;
+}
+h1{
+    color:var(--cor1);
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+}
+.h3{
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--cor2);
+    font-weight: 400;
+    text-align: center;
+}
+input{
+    border: 1px solid var(--cor2);
+    border-radius: 10px;
+    padding: 8px;
+    margin-left: 20px;
+    margin-top: -1px;
+    width: 80%;
+    margin: auto;
+    display: block;
+    outline: none;
+}
+a{
+    display: block;
+    text-align: right;
+    margin-right: 45px;
+    text-decoration:none;
+    color:var(--cor3);
+    font-size: 18px;
+    font-weight: 200;
+}
+button{
+    margin-left: 20px;
+    display: block;
+    background-color: var(--cor1);
+    color: var(--white);
+    width: 86%;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+}
+button:hover{
+    box-shadow: 0px 0px 8px var(--cor1);
+    transition: .2s;
+}
+
+</style>
+</html>

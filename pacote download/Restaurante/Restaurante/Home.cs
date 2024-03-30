@@ -4,42 +4,31 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
 namespace Restaurante
 {
     public partial class Home : Form
     {
+        public event EventHandler ComidaClicked;
+        public event EventHandler BebidaClicked;
+        public Vender vender;
         public Home(string texto)
         {
             InitializeComponent();
             Funcionario.Text = texto;
         }
-
-        private void sidebarTimer_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void Home_Load(object sender, EventArgs e)
         {
-           string textoDigitado = txtNome.Text;
-           Home h = new Home(textoDigitado);
-
             PaginaInicial.Show();
-            ContaGerente.Hide();
+            ContaGerente.Visible = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -84,7 +73,7 @@ namespace Restaurante
 
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
-            AdicionarProdutos a = new AdicionarProdutos();
+            AdicionarProdutos a = new AdicionarProdutos(vender);
             this.Hide();
             a.ShowDialog();
         }
@@ -94,11 +83,6 @@ namespace Restaurante
             VerProdutos v = new VerProdutos();
             this.Hide();
             v.ShowDialog();
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_Eliminar_Click(object sender, EventArgs e)
@@ -119,37 +103,143 @@ namespace Restaurante
         {
             Pesquisar_Produtos p = new Pesquisar_Produtos();
             this.Hide();
-            p.ShowDialog();
+            p.Show();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            Image imagem = guna2Button4.Image;
+            Image imagem = pictureBox10.Image;
             Vender v = new Vender(imagem);
             this.Hide();
-            v.ShowDialog();
+            v.Show();
         }
 
         private void btn_Comidas_Click(object sender, EventArgs e)
         {
-            Image imagem = btn_Comidas.Image;
+            ComidaClicked?.Invoke(this, EventArgs.Empty);
+           /* Image imagem = btn_Comidas.Image;
             Vender v = new Vender(imagem);
             this.Hide();
-            v.ShowDialog();
+            v.Show();*/
         }
 
         private void btn_Bebidas_Click(object sender, EventArgs e)
         {
-            Image imagem = btn_Bebidas.Image;
+            BebidaClicked?.Invoke(this, EventArgs.Empty);
+           /* Image imagem = btn_Bebidas.Image;
             Vender v = new Vender(imagem);
             this.Hide();
-            v.ShowDialog();
+            v.ShowDialog();*/
         }
 
         private void btn_Estoque_Click(object sender, EventArgs e)
         {
             Image imagem = btn_Estoque.Image;
             Vender v = new Vender(imagem);
+            this.Hide();
+            v.ShowDialog();
+        }
+
+        private void Esqueci_Click(object sender, EventArgs e)
+        {
+            SenhaGestor s = new SenhaGestor();
+            this.Hide();
+            s.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Gestor g = new Gestor();
+            this.Hide();
+            g.Show();
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtNome.Text != "" && txtSenha.Text != "")
+                {
+                    string string_conexao = "server=localhost;uid=root;database=restaurante;Sslmode=none";
+
+                    string Nome = txtNome.Text;
+                    string Senha = txtSenha.Text;
+                    bool verificar = false;
+
+                    MySqlConnection ligacao = new MySqlConnection(string_conexao);
+                    ligacao.Open();
+                    MySqlDataAdapter adaptador = new MySqlDataAdapter("SELECT * FROM gestor", string_conexao);
+                    DataTable tabela = new DataTable();
+                    adaptador.Fill(tabela);
+                    foreach (DataRow linha in tabela.Rows)
+                    {
+                        if (linha["nome"].ToString() == Nome && linha["senha"].ToString() == Senha)
+                        {
+                            verificar = true;
+                            break;
+                        }
+                        else
+                        {
+                            verificar = false;
+                        }
+                    }
+                    if (verificar == true)
+                    {
+                        string textoDigitado = txtNome.Text;
+
+                        Home h = new Home(textoDigitado);
+                        this.Hide();
+                        h.ShowDialog();
+                        txtNome.Text = string.Empty;
+                        txtSenha.Text = string.Empty;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Esta Conta não existe ! Crie uma Conta");
+                    }
+                }
+                else if (txtNome.Text == "" && txtSenha.Text == "")
+                {
+                    MessageBox.Show("Preencha Todos Campos Vazios!!!");
+                }
+                else if (txtNome.Text == "")
+                {
+                    MessageBox.Show("Coloque o Nome");
+                }
+                else if (txtSenha.Text == "")
+                {
+                    MessageBox.Show("Coloque a Senha");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("" + ex.Message);
+            }
+
+        }
+
+        private void guna2Button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            string url = "http://127.0.0.1:5500/facebook/index.html";
+            Process.Start(url);
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+         
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            FormEstoque v = new FormEstoque();
+            this.Hide();
+            v.ShowDialog();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            FormEstoque v = new FormEstoque();
             this.Hide();
             v.ShowDialog();
         }

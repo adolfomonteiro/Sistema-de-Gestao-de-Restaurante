@@ -38,5 +38,10 @@ namespace Restaurante
             adaptador.Fill(tabela);
             dadosProduto.DataSource = tabela;
         }
+
+        private void Pesquisar_Produtos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

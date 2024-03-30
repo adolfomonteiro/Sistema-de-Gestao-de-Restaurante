@@ -38,6 +38,9 @@
             this.txtPreco = new System.Windows.Forms.Label();
             this.btn_Entrar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FotoPrato)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +53,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
             this.label1.Location = new System.Drawing.Point(226, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 42);
@@ -73,7 +77,7 @@
             // txtNome
             // 
             this.txtNome.AutoSize = true;
-            this.txtNome.Location = new System.Drawing.Point(275, 135);
+            this.txtNome.Location = new System.Drawing.Point(447, 134);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(96, 33);
             this.txtNome.TabIndex = 2;
@@ -82,7 +86,7 @@
             // txtCategoria
             // 
             this.txtCategoria.AutoSize = true;
-            this.txtCategoria.Location = new System.Drawing.Point(275, 184);
+            this.txtCategoria.Location = new System.Drawing.Point(447, 181);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(96, 33);
             this.txtCategoria.TabIndex = 3;
@@ -91,7 +95,7 @@
             // txtPreco
             // 
             this.txtPreco.AutoSize = true;
-            this.txtPreco.Location = new System.Drawing.Point(275, 233);
+            this.txtPreco.Location = new System.Drawing.Point(447, 232);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(96, 33);
             this.txtPreco.TabIndex = 4;
@@ -130,7 +134,7 @@
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkGreen;
+            this.guna2Button1.FillColor = System.Drawing.Color.BlueViolet;
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Location = new System.Drawing.Point(304, 360);
@@ -141,12 +145,42 @@
             this.guna2Button1.Text = "Vender";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(268, 134);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 33);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Nome : ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(268, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 33);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Categoria : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(273, 232);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 33);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Preço : ";
+            // 
             // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(610, 496);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btn_Entrar);
             this.Controls.Add(this.txtPreco);
@@ -178,5 +212,8 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button btn_Entrar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

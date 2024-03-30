@@ -1,0 +1,13 @@
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.2.0.4.6.Fakes.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.2.0.4.6.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.2.0.4.6.Fakes.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Accessibility.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\ADODB.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Microsoft.StdFormat.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\MSDATASRC.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\MySql.Data.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\o\f.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\o\Guna.UI2.2.0.4.6.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\o\Guna.UI2.2.0.4.6.Fakes.pdb

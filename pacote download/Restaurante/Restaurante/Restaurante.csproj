@@ -37,8 +37,15 @@
     <Reference Include="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\..\restaurante\2.0.4.5\lib\net40\Guna.UI2.dll</HintPath>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\Guna.UI2\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2.2.0.4.6.Fakes">
+      <HintPath>FakesAssemblies\Guna.UI2.2.0.4.6.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Microsoft.StdFormat, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -106,6 +113,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstoque.Designer.cs">
+      <DependentUpon>FormEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestor.Designer.cs">
+      <DependentUpon>Gestor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +145,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SenhaGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SenhaGestor.Designer.cs">
+      <DependentUpon>SenhaGestor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Venda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +184,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEstoque.resx">
+      <DependentUpon>FormEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestor.resx">
+      <DependentUpon>Gestor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +209,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SenhaGestor.resx">
+      <DependentUpon>SenhaGestor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Venda.resx">
       <DependentUpon>Venda.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +221,7 @@
     <EmbeddedResource Include="VerProdutos.resx">
       <DependentUpon>VerProdutos.cs</DependentUpon>
     </EmbeddedResource>
+    <Fakes Include="Fakes\Guna.UI2.fakes" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

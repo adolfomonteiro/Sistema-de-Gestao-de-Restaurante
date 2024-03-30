@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
             this.label1.Location = new System.Drawing.Point(236, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(255, 45);
@@ -69,9 +69,9 @@
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(41, 393);
+            this.pictureBox7.Location = new System.Drawing.Point(41, 407);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(53, 67);
+            this.pictureBox7.Size = new System.Drawing.Size(53, 53);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 39;
             this.pictureBox7.TabStop = false;

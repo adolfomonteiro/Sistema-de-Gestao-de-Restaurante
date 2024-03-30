@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
             this.label1.Location = new System.Drawing.Point(71, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(539, 58);
@@ -150,7 +150,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.BorderColor = System.Drawing.Color.Gray;
+            this.txtSenha.BorderColor = System.Drawing.Color.BlueViolet;
             this.txtSenha.BorderRadius = 10;
             this.txtSenha.BorderThickness = 2;
             this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -162,7 +162,7 @@
             this.txtSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSenha.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtSenha.ForeColor = System.Drawing.Color.Black;
-            this.txtSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSenha.HoverState.BorderColor = System.Drawing.Color.ForestGreen;
             this.txtSenha.Location = new System.Drawing.Point(81, 314);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtSenha.Name = "txtSenha";
@@ -175,6 +175,7 @@
             // 
             // mostrado
             // 
+            this.mostrado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mostrado.Image = ((System.Drawing.Image)(resources.GetObject("mostrado.Image")));
             this.mostrado.Location = new System.Drawing.Point(502, 319);
             this.mostrado.Name = "mostrado";
@@ -182,20 +183,23 @@
             this.mostrado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mostrado.TabIndex = 27;
             this.mostrado.TabStop = false;
+            this.mostrado.Click += new System.EventHandler(this.mostrado_Click);
             // 
             // ocultado
             // 
+            this.ocultado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ocultado.Image = ((System.Drawing.Image)(resources.GetObject("ocultado.Image")));
-            this.ocultado.Location = new System.Drawing.Point(501, 318);
+            this.ocultado.Location = new System.Drawing.Point(502, 319);
             this.ocultado.Name = "ocultado";
             this.ocultado.Size = new System.Drawing.Size(47, 43);
             this.ocultado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ocultado.TabIndex = 28;
             this.ocultado.TabStop = false;
+            this.ocultado.Click += new System.EventHandler(this.ocultado_Click);
             // 
             // txtEmail
             // 
-            this.txtEmail.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmail.BorderColor = System.Drawing.Color.BlueViolet;
             this.txtEmail.BorderRadius = 10;
             this.txtEmail.BorderThickness = 2;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -207,7 +211,7 @@
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.ForestGreen;
             this.txtEmail.Location = new System.Drawing.Point(81, 219);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtEmail.Name = "txtEmail";
@@ -219,7 +223,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.BorderColor = System.Drawing.Color.Gray;
+            this.txtNome.BorderColor = System.Drawing.Color.BlueViolet;
             this.txtNome.BorderRadius = 10;
             this.txtNome.BorderThickness = 2;
             this.txtNome.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -231,7 +235,7 @@
             this.txtNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNome.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtNome.ForeColor = System.Drawing.Color.Black;
-            this.txtNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNome.HoverState.BorderColor = System.Drawing.Color.ForestGreen;
             this.txtNome.Location = new System.Drawing.Point(81, 129);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtNome.Name = "txtNome";
@@ -243,7 +247,7 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.BorderColor = System.Drawing.Color.Gray;
+            this.txtTelefone.BorderColor = System.Drawing.Color.BlueViolet;
             this.txtTelefone.BorderRadius = 10;
             this.txtTelefone.BorderThickness = 2;
             this.txtTelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -255,7 +259,7 @@
             this.txtTelefone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefone.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtTelefone.ForeColor = System.Drawing.Color.Black;
-            this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.ForestGreen;
             this.txtTelefone.Location = new System.Drawing.Point(566, 129);
             this.txtTelefone.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtTelefone.Name = "txtTelefone";
@@ -267,7 +271,7 @@
             // 
             // txtMorada
             // 
-            this.txtMorada.BorderColor = System.Drawing.Color.Gray;
+            this.txtMorada.BorderColor = System.Drawing.Color.BlueViolet;
             this.txtMorada.BorderRadius = 10;
             this.txtMorada.BorderThickness = 2;
             this.txtMorada.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -279,7 +283,7 @@
             this.txtMorada.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMorada.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtMorada.ForeColor = System.Drawing.Color.Black;
-            this.txtMorada.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMorada.HoverState.BorderColor = System.Drawing.Color.ForestGreen;
             this.txtMorada.Location = new System.Drawing.Point(566, 222);
             this.txtMorada.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtMorada.Name = "txtMorada";
@@ -300,7 +304,7 @@
             this.btn_Entrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Entrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Entrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Entrar.FillColor = System.Drawing.Color.Red;
+            this.btn_Entrar.FillColor = System.Drawing.Color.BlueViolet;
             this.btn_Entrar.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.btn_Entrar.ForeColor = System.Drawing.Color.White;
             this.btn_Entrar.Location = new System.Drawing.Point(566, 314);
