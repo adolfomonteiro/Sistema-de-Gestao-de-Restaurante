@@ -44,10 +44,5 @@ namespace Restaurante
         {
             
             }
-
-        private void guna2ProgressBar1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -41,6 +41,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.painel_Comidas = new System.Windows.Forms.Panel();
             this.panel_Bebidas = new System.Windows.Forms.Panel();
+            this.Estoque = new System.Windows.Forms.Panel();
+            this.quantidade_Vendida = new System.Windows.Forms.Label();
+            this.saida = new System.Windows.Forms.Label();
+            this.entrada = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.total_vendido = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -138,6 +146,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.painel_Comidas.SuspendLayout();
             this.panel_Bebidas.SuspendLayout();
+            this.Estoque.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
@@ -177,7 +186,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Controls.Add(this.Funcionario);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
@@ -190,13 +199,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(340, 613);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Funcionario
             // 
             this.Funcionario.AutoSize = true;
             this.Funcionario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Funcionario.ForeColor = System.Drawing.Color.White;
-            this.Funcionario.Location = new System.Drawing.Point(76, 84);
+            this.Funcionario.ForeColor = System.Drawing.Color.Black;
+            this.Funcionario.Location = new System.Drawing.Point(83, 68);
             this.Funcionario.Name = "Funcionario";
             this.Funcionario.Size = new System.Drawing.Size(129, 39);
             this.Funcionario.TabIndex = 13;
@@ -204,10 +214,10 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.BlueViolet;
+            this.pictureBox8.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(12, 70);
+            this.pictureBox8.Location = new System.Drawing.Point(12, 56);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(55, 65);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -216,7 +226,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.BlueViolet;
+            this.pictureBox7.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(12, 514);
@@ -229,14 +239,14 @@
             // 
             // btn_Bebidas
             // 
-            this.btn_Bebidas.BackColor = System.Drawing.Color.BlueViolet;
+            this.btn_Bebidas.BackColor = System.Drawing.Color.DarkGray;
             this.btn_Bebidas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Bebidas.FlatAppearance.BorderSize = 0;
             this.btn_Bebidas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.btn_Bebidas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.btn_Bebidas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btn_Bebidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Bebidas.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Bebidas.ForeColor = System.Drawing.Color.White;
+            this.btn_Bebidas.ForeColor = System.Drawing.Color.Red;
+            this.btn_Bebidas.Image = ((System.Drawing.Image)(resources.GetObject("btn_Bebidas.Image")));
             this.btn_Bebidas.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_Bebidas.Location = new System.Drawing.Point(0, 268);
             this.btn_Bebidas.Name = "btn_Bebidas";
@@ -248,14 +258,14 @@
             // 
             // btn_Comidas
             // 
-            this.btn_Comidas.BackColor = System.Drawing.Color.BlueViolet;
+            this.btn_Comidas.BackColor = System.Drawing.Color.DarkGray;
             this.btn_Comidas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Comidas.FlatAppearance.BorderSize = 0;
             this.btn_Comidas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.btn_Comidas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.btn_Comidas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btn_Comidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Comidas.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Comidas.ForeColor = System.Drawing.Color.White;
+            this.btn_Comidas.ForeColor = System.Drawing.Color.Red;
+            this.btn_Comidas.Image = ((System.Drawing.Image)(resources.GetObject("btn_Comidas.Image")));
             this.btn_Comidas.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_Comidas.Location = new System.Drawing.Point(0, 187);
             this.btn_Comidas.Name = "btn_Comidas";
@@ -267,31 +277,31 @@
             // 
             // btn_Estoque
             // 
-            this.btn_Estoque.BackColor = System.Drawing.Color.BlueViolet;
+            this.btn_Estoque.BackColor = System.Drawing.Color.DarkGray;
             this.btn_Estoque.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Estoque.FlatAppearance.BorderSize = 0;
             this.btn_Estoque.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.btn_Estoque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.btn_Estoque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btn_Estoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Estoque.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Estoque.ForeColor = System.Drawing.Color.White;
+            this.btn_Estoque.ForeColor = System.Drawing.Color.Red;
+            this.btn_Estoque.Image = ((System.Drawing.Image)(resources.GetObject("btn_Estoque.Image")));
             this.btn_Estoque.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Estoque.Location = new System.Drawing.Point(0, 359);
+            this.btn_Estoque.Location = new System.Drawing.Point(0, 353);
             this.btn_Estoque.Name = "btn_Estoque";
             this.btn_Estoque.Size = new System.Drawing.Size(345, 79);
             this.btn_Estoque.TabIndex = 3;
-            this.btn_Estoque.Text = "Ver Estoque";
+            this.btn_Estoque.Text = "Estoque";
             this.btn_Estoque.UseVisualStyleBackColor = false;
             this.btn_Estoque.Click += new System.EventHandler(this.btn_Estoque_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(76, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 49);
+            this.label1.Size = new System.Drawing.Size(148, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nice Eat";
             // 
@@ -335,6 +345,7 @@
             // 
             // panel_Bebidas
             // 
+            this.panel_Bebidas.Controls.Add(this.Estoque);
             this.panel_Bebidas.Controls.Add(this.label27);
             this.panel_Bebidas.Controls.Add(this.label28);
             this.panel_Bebidas.Controls.Add(this.label29);
@@ -369,6 +380,92 @@
             this.panel_Bebidas.Name = "panel_Bebidas";
             this.panel_Bebidas.Size = new System.Drawing.Size(742, 610);
             this.panel_Bebidas.TabIndex = 30;
+            // 
+            // Estoque
+            // 
+            this.Estoque.Controls.Add(this.quantidade_Vendida);
+            this.Estoque.Controls.Add(this.saida);
+            this.Estoque.Controls.Add(this.entrada);
+            this.Estoque.Controls.Add(this.label34);
+            this.Estoque.Controls.Add(this.label33);
+            this.Estoque.Controls.Add(this.total_vendido);
+            this.Estoque.Controls.Add(this.label32);
+            this.Estoque.Location = new System.Drawing.Point(0, 3);
+            this.Estoque.Name = "Estoque";
+            this.Estoque.Size = new System.Drawing.Size(742, 607);
+            this.Estoque.TabIndex = 50;
+            this.Estoque.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // quantidade_Vendida
+            // 
+            this.quantidade_Vendida.AutoSize = true;
+            this.quantidade_Vendida.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantidade_Vendida.ForeColor = System.Drawing.Color.DarkGreen;
+            this.quantidade_Vendida.Location = new System.Drawing.Point(47, 93);
+            this.quantidade_Vendida.Name = "quantidade_Vendida";
+            this.quantidade_Vendida.Size = new System.Drawing.Size(80, 89);
+            this.quantidade_Vendida.TabIndex = 6;
+            this.quantidade_Vendida.Text = "0";
+            // 
+            // saida
+            // 
+            this.saida.AutoSize = true;
+            this.saida.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saida.ForeColor = System.Drawing.Color.DarkGreen;
+            this.saida.Location = new System.Drawing.Point(51, 443);
+            this.saida.Name = "saida";
+            this.saida.Size = new System.Drawing.Size(80, 89);
+            this.saida.TabIndex = 5;
+            this.saida.Text = "0";
+            // 
+            // entrada
+            // 
+            this.entrada.AutoSize = true;
+            this.entrada.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entrada.ForeColor = System.Drawing.Color.DarkGreen;
+            this.entrada.Location = new System.Drawing.Point(47, 265);
+            this.entrada.Name = "entrada";
+            this.entrada.Size = new System.Drawing.Size(80, 89);
+            this.entrada.TabIndex = 4;
+            this.entrada.Text = "0";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(38, 368);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(148, 49);
+            this.label34.TabIndex = 3;
+            this.label34.Text = "Saídas";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(38, 203);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(190, 49);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "Entradas";
+            // 
+            // total_vendido
+            // 
+            this.total_vendido.AutoSize = true;
+            this.total_vendido.Location = new System.Drawing.Point(60, 99);
+            this.total_vendido.Name = "total_vendido";
+            this.total_vendido.Size = new System.Drawing.Size(0, 33);
+            this.total_vendido.TabIndex = 1;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(38, 21);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(291, 49);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Total Vendido";
             // 
             // label27
             // 
@@ -1208,6 +1305,8 @@
             this.painel_Comidas.PerformLayout();
             this.panel_Bebidas.ResumeLayout(false);
             this.panel_Bebidas.PerformLayout();
+            this.Estoque.ResumeLayout(false);
+            this.Estoque.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
@@ -1251,6 +1350,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btn_Bebidas;
         private System.Windows.Forms.Button btn_Comidas;
+        private System.Windows.Forms.Button btn_Estoque;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel painel_Comidas;
         private System.Windows.Forms.PictureBox pictureBox17;
@@ -1346,6 +1446,13 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse31;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse32;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button btn_Estoque;
+        private System.Windows.Forms.Panel Estoque;
+        private System.Windows.Forms.Label total_vendido;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label quantidade_Vendida;
+        private System.Windows.Forms.Label saida;
+        private System.Windows.Forms.Label entrada;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
     }
 }

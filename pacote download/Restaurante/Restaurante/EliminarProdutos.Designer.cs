@@ -30,22 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarProdutos));
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.txtId = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Eliminar = new Guna.UI2.WinForms.Guna2Button();
             this.dadosProduto = new System.Windows.Forms.DataGridView();
             this.voltar = new System.Windows.Forms.PictureBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dadosProduto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voltar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
-            this.label1.Location = new System.Drawing.Point(439, 29);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(264, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(321, 45);
             this.label1.TabIndex = 1;
@@ -53,7 +58,7 @@
             // 
             // txtId
             // 
-            this.txtId.BorderColor = System.Drawing.Color.BlueViolet;
+            this.txtId.BorderColor = System.Drawing.Color.Gray;
             this.txtId.BorderRadius = 20;
             this.txtId.BorderThickness = 2;
             this.txtId.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -65,8 +70,8 @@
             this.txtId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtId.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.txtId.ForeColor = System.Drawing.Color.Black;
-            this.txtId.HoverState.BorderColor = System.Drawing.Color.ForestGreen;
-            this.txtId.Location = new System.Drawing.Point(169, 115);
+            this.txtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtId.Location = new System.Drawing.Point(169, 96);
             this.txtId.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.txtId.Name = "txtId";
             this.txtId.PasswordChar = '\0';
@@ -87,13 +92,13 @@
             this.btn_Eliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Eliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Eliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Eliminar.FillColor = System.Drawing.Color.BlueViolet;
+            this.btn_Eliminar.FillColor = System.Drawing.Color.Red;
             this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.btn_Eliminar.ForeColor = System.Drawing.Color.White;
             this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
             this.btn_Eliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Eliminar.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_Eliminar.Location = new System.Drawing.Point(169, 200);
+            this.btn_Eliminar.Location = new System.Drawing.Point(169, 181);
             this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(476, 74);
@@ -105,9 +110,8 @@
             // 
             this.dadosProduto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dadosProduto.BackgroundColor = System.Drawing.Color.White;
-            this.dadosProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dadosProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dadosProduto.Location = new System.Drawing.Point(63, 285);
+            this.dadosProduto.Location = new System.Drawing.Point(63, 263);
             this.dadosProduto.Name = "dadosProduto";
             this.dadosProduto.RowTemplate.Height = 33;
             this.dadosProduto.Size = new System.Drawing.Size(664, 274);
@@ -125,11 +129,6 @@
             this.voltar.TabIndex = 39;
             this.voltar.TabStop = false;
             this.voltar.Click += new System.EventHandler(this.voltar_Click);
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // EliminarProdutos
             // 
@@ -158,11 +157,11 @@
 
         #endregion
 
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtId;
         private Guna.UI2.WinForms.Guna2Button btn_Eliminar;
         private System.Windows.Forms.DataGridView dadosProduto;
         private System.Windows.Forms.PictureBox voltar;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

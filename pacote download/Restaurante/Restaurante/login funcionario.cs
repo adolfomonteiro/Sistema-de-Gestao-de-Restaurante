@@ -17,9 +17,66 @@ namespace Restaurante
         {
             InitializeComponent();
         }
+
+        private void login_funcionario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Ocultar_Click(object sender, EventArgs e)
+        {
+            PictureBox pictureBox = sender as PictureBox;
+
+            if (pictureBox == Ocultar)
+            {
+                // Configura a TextBox para ocultar o texto
+                txtSenha.UseSystemPasswordChar = true;
+            }
+            else if (pictureBox == Ver)
+            {
+                // Configura a TextBox para mostrar o texto
+                txtSenha.UseSystemPasswordChar = false;
+            }
+
+        }
+        
+
+        private void Ver_Click(object sender, EventArgs e)
+        {
+            bool password = txtSenha.UseSystemPasswordChar;
+            txtSenha.UseSystemPasswordChar = false;
+
+            string texto = txtSenha.Text;
+            txtSenha.UseSystemPasswordChar = password;
+
+
+            Ver.Visible = false;
+            Ocultar.Visible = true;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -70,7 +127,7 @@ namespace Restaurante
                     }
                     else
                     {
-                        MessageBox.Show("Esta Conta não existe ! Crie uma Conta");
+                        MessageBox.Show("Crie uma Conta");
                     }
                 }
                 else if(txtNome.Text == "" && txtSenha.Text == "")
@@ -91,13 +148,6 @@ namespace Restaurante
                 MessageBox.Show("" + ex.Message);     
             }
            
-        }
-
-        private void lblEntrar_Click(object sender, EventArgs e)
-        {
-            Home h = new Home("");
-            this.Hide();
-            h.Show();
         }
     }
 }

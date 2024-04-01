@@ -31,7 +31,7 @@ namespace Restaurante
                 txtId.Text = "";
                 string string_conexao = "server=localhost;uid=root;database=restaurante;Sslmode=none";
 
-                MySqlDataAdapter adaptador = new MySqlDataAdapter("SELECT nome,categoria,preco,quantidade from Produtos", string_conexao);
+                MySqlDataAdapter adaptador = new MySqlDataAdapter("SELECT nome,categoria,subcategoria,preco,quantidade from Produtos", string_conexao);
                 DataTable tabela = new DataTable();
                 adaptador.Fill(tabela);
                 dadosProduto.DataSource = tabela;
@@ -42,7 +42,7 @@ namespace Restaurante
         {
             string string_conexao = "server=localhost;uid=root;database=restaurante;Sslmode=none";
 
-            MySqlDataAdapter adaptador = new MySqlDataAdapter("SELECT nome,categoria,preco,quantidade from Produtos", string_conexao);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("SELECT nome,categoria,subcategoria,preco,quantidade from Produtos", string_conexao);
             DataTable tabela = new DataTable();
             adaptador.Fill(tabela);
             dadosProduto.DataSource = tabela;

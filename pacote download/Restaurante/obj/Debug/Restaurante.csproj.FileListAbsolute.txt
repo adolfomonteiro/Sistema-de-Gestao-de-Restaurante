@@ -1,0 +1,74 @@
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Guna.UI2.dll
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.csprojResolveAssemblyReference.cache
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Form1.resources
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.Cache
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+c:\users\chinganima\documents\visual studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\CHINGANIMA\documents\visual studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.login_funcionario.resources
+D:\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+D:\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+D:\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.csprojResolveAssemblyReference.cache
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.Form1.resources
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.login_funcionario.resources
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.Cache
+D:\Restaurante\Restaurante\obj\Debug\Restaurante.Home.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Form1.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Home.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.login_funcionario.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.Cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\MySql.Data.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Cadastrar_Funcionarios.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.AdicionarProdutos.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.VerProdutos.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.EliminarProdutos.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.EditarProdutos.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Pesquisar_Produtos.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Vender.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Venda.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Guna.UI2.2.0.4.6.Fakes.fakesconfig
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Guna.UI2.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.csprojFakesResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\fakes.args
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Accessibility.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\ADODB.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.2.0.4.6.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.2.0.4.6.Fakes.fakesconfig
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.2.0.4.6.Fakes.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.2.0.4.6.Fakes.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Guna.UI2.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\Microsoft.StdFormat.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\MSDATASRC.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\b\MySql.Data.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\f.ah
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\f.ch
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\f.cs
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\f.csproj
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\f.fakes
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\f.fakesconfig
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\f.snk
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\o\f.csproj.FileListAbsolute.txt
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\o\f.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\o\Guna.UI2.2.0.4.6.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Fakes\gui2\o\Guna.UI2.2.0.4.6.Fakes.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Guna.UI2.2.0.4.6.Fakes.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\bin\Debug\Guna.UI2.2.0.4.6.Fakes.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.Gestor.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.SenhaGestor.resources
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\Restaurante\Restaurante\obj\Debug\Restaurante.FormEstoque.resources

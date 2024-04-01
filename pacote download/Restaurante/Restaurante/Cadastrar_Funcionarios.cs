@@ -46,26 +46,5 @@ namespace Restaurante
             this.Hide();
             l.ShowDialog();
         }
-
-        private void ocultado_Click(object sender, EventArgs e)
-        {
-            mostrado.Show();
-            ocultado.Visible = false;
-            if(txtSenha.UseSystemPasswordChar == true)
-            {
-                txtSenha.PasswordChar = txtSenha.PasswordChar;
-            }
-            else
-            {
-                txtSenha.PasswordChar = '\0';
-            }
-           
-        }
-
-        private void mostrado_Click(object sender, EventArgs e)
-        {
-            ocultado.Show();
-            mostrado.Visible = false;
-        }
     }
 }

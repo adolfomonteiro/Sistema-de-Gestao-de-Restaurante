@@ -30,22 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pesquisar_Produtos));
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.Pesquisar = new Guna.UI2.WinForms.Guna2Button();
             this.voltar = new System.Windows.Forms.PictureBox();
             this.dadosProduto = new System.Windows.Forms.DataGridView();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.voltar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosProduto)).BeginInit();
             this.SuspendLayout();
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
-            this.label1.Location = new System.Drawing.Point(218, 52);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(218, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(349, 45);
             this.label1.TabIndex = 2;
@@ -53,7 +58,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.BorderColor = System.Drawing.Color.BlueViolet;
+            this.txtNome.BorderColor = System.Drawing.Color.Gray;
             this.txtNome.BorderRadius = 20;
             this.txtNome.BorderThickness = 2;
             this.txtNome.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -65,8 +70,8 @@
             this.txtNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNome.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.txtNome.ForeColor = System.Drawing.Color.Black;
-            this.txtNome.HoverState.BorderColor = System.Drawing.Color.ForestGreen;
-            this.txtNome.Location = new System.Drawing.Point(132, 114);
+            this.txtNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNome.Location = new System.Drawing.Point(132, 78);
             this.txtNome.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.txtNome.Name = "txtNome";
             this.txtNome.PasswordChar = '\0';
@@ -87,13 +92,13 @@
             this.Pesquisar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Pesquisar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Pesquisar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Pesquisar.FillColor = System.Drawing.Color.BlueViolet;
+            this.Pesquisar.FillColor = System.Drawing.Color.Red;
             this.Pesquisar.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.Pesquisar.ForeColor = System.Drawing.Color.White;
             this.Pesquisar.Image = ((System.Drawing.Image)(resources.GetObject("Pesquisar.Image")));
             this.Pesquisar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Pesquisar.ImageSize = new System.Drawing.Size(50, 50);
-            this.Pesquisar.Location = new System.Drawing.Point(132, 190);
+            this.Pesquisar.Location = new System.Drawing.Point(132, 154);
             this.Pesquisar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Pesquisar.Name = "Pesquisar";
             this.Pesquisar.Size = new System.Drawing.Size(476, 74);
@@ -118,18 +123,12 @@
             // 
             this.dadosProduto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dadosProduto.BackgroundColor = System.Drawing.Color.White;
-            this.dadosProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dadosProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dadosProduto.Location = new System.Drawing.Point(50, 293);
+            this.dadosProduto.Location = new System.Drawing.Point(50, 252);
             this.dadosProduto.Name = "dadosProduto";
             this.dadosProduto.RowTemplate.Height = 33;
-            this.dadosProduto.Size = new System.Drawing.Size(664, 233);
+            this.dadosProduto.Size = new System.Drawing.Size(664, 274);
             this.dadosProduto.TabIndex = 40;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // Pesquisar_Produtos
             // 
@@ -148,7 +147,6 @@
             this.Name = "Pesquisar_Produtos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pesquisar_Produtos";
-            this.Load += new System.EventHandler(this.Pesquisar_Produtos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.voltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosProduto)).EndInit();
             this.ResumeLayout(false);
@@ -158,11 +156,11 @@
 
         #endregion
 
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtNome;
         private Guna.UI2.WinForms.Guna2Button Pesquisar;
         private System.Windows.Forms.PictureBox voltar;
         private System.Windows.Forms.DataGridView dadosProduto;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

@@ -35,13 +35,24 @@ namespace Restaurante
             }
         }
         protected override string NomeFunc
-        {get{return base.NomeFunc;}set{base.NomeFunc = value;}}
+        {
+            get
+            {
+                return base.NomeFunc;
+            }
+
+            set
+            {
+                base.NomeFunc = value;
+            }
+        }
         protected override string email
         {
             get
             {
                 return base.email;
             }
+
             set
             {
                 base.email = value;
@@ -53,6 +64,7 @@ namespace Restaurante
             {
                 return base.telefone;
             }
+
             set
             {
                 base.telefone = value;
@@ -64,6 +76,7 @@ namespace Restaurante
             {
                 return base.morada;
             }
+
             set
             {
                 base.morada = value;
@@ -76,6 +89,7 @@ namespace Restaurante
             {
                 return base.palavraPasse;
             }
+
             set
             {
                 base.palavraPasse = value;
@@ -87,6 +101,7 @@ namespace Restaurante
             {
                 return base.id;
             }
+
             set
             {
                 base.id = value;
@@ -95,64 +110,6 @@ namespace Restaurante
         protected override MySqlConnection connection()
         {
             return base.connection();
-        }
-        public void SenhaDoGestor(string _senha)
-        {
-            this.senha = _senha;
-
-            MySqlConnection conexao = connection();
-            MySqlCommand comando = new MySqlCommand();
-
-            try
-            {
-                conexao.Open();
-                comando.CommandText = "select from gestor  where senha=@senha";
-                comando.Parameters.AddWithValue("@senha", senha);
-                comando.Connection = conexao;
-                comando.ExecuteNonQuery();
-                conexao.Dispose();
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
-            finally
-            {
-                conexao.Close();
-            }
-        }
-        public void CadastrarGestor(string _nome, string _email, int _telefone, string _senha)
-        {
-            this.NomeFunc = _nome;
-            this.email = _email;
-            this.telefone = _telefone;
-            this.palavraPasse = _senha;
-
-            MySqlConnection conexao = connection();
-            MySqlCommand comando = new MySqlCommand();
-
-            try
-            {
-                conexao.Open();
-                comando.CommandText = "INSERT INTO gestor VALUES(default,@nome,@telefone,@email,@senha)";
-                comando.Parameters.AddWithValue("@nome", NomeFunc);
-                comando.Parameters.AddWithValue("@telefone", telefone);
-                comando.Parameters.AddWithValue("@email", email);
-                comando.Parameters.AddWithValue("@senha", palavraPasse);
-                comando.Connection = conexao;
-                comando.ExecuteNonQuery();
-                conexao.Dispose();
-
-                
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
-            finally
-            {
-                conexao.Close();
-            }
         }
         public void CadastrarFuncionarios(string _nome, string _email, int _telefone, string _morada, string _senha)
         {
@@ -201,9 +158,10 @@ namespace Restaurante
             try
             {
                 conexao.Open();
-                comando.CommandText = "INSERT INTO Produtos VALUES(@nome,@categoria,@preco,@quantidade)";
+                comando.CommandText = "INSERT INTO Produtos VALUES(@nome,@categoria,@subcategoria,@preco,@quantidade)";
                 comando.Parameters.AddWithValue("@nome", nomeDoProduto);
                 comando.Parameters.AddWithValue("@categoria", categoria);
+                comando.Parameters.AddWithValue("@subcategoria", subcategoria);
                 comando.Parameters.AddWithValue("@preco", preco);
                 comando.Parameters.AddWithValue("@quantidade", quantidade);
 
@@ -247,11 +205,12 @@ namespace Restaurante
             }
 
         }
-        public void EditarProduto(int _id, string _nome, string _categoria, int _preco, int _quantidade)
+        public void EditarProduto(int _id, string _nome, string _categoria, string _subcategoria, int _preco, int _quantidade)
         {
             this.id = _id;
             this.nomeDoProduto = _nome;
             this.categoria = _categoria;
+            this.subcategoria = _subcategoria;
             this.preco = _preco;
             this.quantidade = _quantidade;
 
@@ -261,10 +220,11 @@ namespace Restaurante
             try
             {
                 conexao.Open();
-                comando.CommandText = $"UPDATE Produtos SET nome=@nome, categoria=@categoria,preco=@preco,quantidade=@quantidade WHERE id = @id";
+                comando.CommandText = $"UPDATE Produtos SET nome=@nome, categoria=@categoria,subcategoria=@subcategoria,preco=@preco,quantidade=@quantidade WHERE id = @id";
                 comando.Parameters.AddWithValue("@id", id);
                 comando.Parameters.AddWithValue("@nome", nomeDoProduto);
                 comando.Parameters.AddWithValue("@categoria", categoria);
+                comando.Parameters.AddWithValue("@subcategoria", subcategoria);
                 comando.Parameters.AddWithValue("@preco", preco);
                 comando.Parameters.AddWithValue("@quantidade", quantidade);
 
