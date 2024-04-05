@@ -25,3 +25,6 @@ Restaurante/FakesAssemblies/Guna.UI2.2.0.4.6.Fakes.xml
 *.svg
 *.gif
 *.pdf
+*.dll
+*.fakesconfig
+*.xml
